@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #EA5F8E;
+    overflow: hidden; 
+    font-family: "Poppins", sans-serif;  
+    color: #dbdada; 
+}
+
+.container{
+    background-color: #3D434B;
+    width: 450px;
+    height: 600px;
+    border-radius: 10px;
+    margin: 2% auto;
+    box-shadow: 0px 5px 15px 0px #080808b9;
+}
+
+.date-txt{
+    position: relative;
+    top: 10%;
+    text-align: center;
+}
+
+.date-txt h2{
+    font-size: 30px;
+}
+
+.date-txt h3{
+    color: #9A9FA7;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+form{
+    width: 100%;
+    text-align: center;
+    margin-top: 25%;
+}
+
+.input-field i{
+    position: absolute;
+}
+
+.icon{
+    color: #6d7075;
+    padding: 11px 0px 0px 10px;
+    transition: 0.2s;
+}
+
+.todo-input{
+    background-color: #26292e;
+    outline: none;
+    border-radius: 5px;
+    border: #17181b solid 2px;
+    padding: 10px;
+    padding-left: 35px;
+    color: #ffffff;
+    font-weight: 700;
+    width: 70%;
+}
+
+.todo-input::placeholder{
+    color: #6d7075;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+/*Everything ToDo*/
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list{
+    list-style: none;
+    min-width: 83%;
+    max-height: 350px;
+    overflow-y: visible;
+    overflow-x: hidden;
+}
+
+.todo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #dbdada;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+}
+
+.todo li{
+    flex: 1;
+    margin-left: 10px;
+}
+
+.delete-btn{
+    color: #dbdada;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.delete-btn:hover{
+    color: #fa6262;
+}
+
+.complete-btn{
+    height: 20px;
+    width: 20px;
+    outline: none;
+    background-color: #46484b;
+    border: #29292b solid 2px;
+    border-radius: 3px;
+    transition: 0.2s;
+}
+
+.complete-btn:hover{
+    border: #909096 solid 2px;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.3;
+}
+
+.fa-trash{
+    pointer-events: none;
+}
+
+.move{
+    transform: translate(8rem);
+    transition: 0.5s ease;
+    opacity: 0;
+}
