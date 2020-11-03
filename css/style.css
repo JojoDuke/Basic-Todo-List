@@ -84,6 +84,26 @@ form{
     overflow-y: visible;
     overflow-x: hidden;
 }
+/*Things to do with a custome scrollbar*/
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #929292b6;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: #94b3bd;
+}
+::-webkit-scrollbar-track-piece:end {
+    background: transparent;
+    margin-bottom: 10px; 
+}
+::-webkit-scrollbar-track-piece:start {
+    background: transparent;
+    margin-top: 10px;
+}
 
 .todo{
     display: flex;
